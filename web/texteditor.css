@@ -1,0 +1,56 @@
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+
+p {
+  color: #333;
+}
+
+.container {
+  width: 500px;
+  margin : 10px;
+  float:left;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+
+
+#text {
+  font-size: 24pt;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.texteditor {
+  width: 450px;
+  height: 400px;
+  margin: 3px;
+  padding: 3px; 
+}
+
+.rawtextarea {
+  width: 430px;
+  height: 100px;
+  margin: 3px;
+  padding: 3px;
+}
+
+.toolbar {
+  
+}
+
+.editbox {
+  width: 430px;
+  height: 200px;
+  padding: 3px;
+  margin: 3px;
+  border: 2px solid black;  
+}
