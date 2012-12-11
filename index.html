@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Simple text editor : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Simple text editor</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/chrisbu/simple_text_editor">View on GitHub</a>
+
+          <h1 id="project_title">Simple text editor</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/chrisbu/simple_text_editor/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/chrisbu/simple_text_editor/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Simple text editor</h1>
+
+<p>You can use this in your own code by adding the following pub dependency:</p>
+
+<pre><code>dependencies: 
+   simple_text_editor:
+      git: git://github.com/chrisbu/simple_text_editor.git
+</code></pre>
+
+<p>In your code, you can either initialize it at the time of construction, or attach it to a DOM element using the <code>attachTo(el)</code> method:</p>
+
+<pre><code>// use this style...
+var st = new SimpleTextEditor(
+    attachTo:query("#container1"),
+    showRawText:true,
+    text:"&lt;b&gt;Editor&lt;/b&gt; created with constructor");  
+
+// or this style
+var st1 = new SimpleTextEditor();
+st1.showRawText = true;
+st1.attach(query("#container2"));
+st1.rawText = "&lt;b&gt;Editor&lt;/b&gt; created with properties and methods";
+</code></pre>
+
+<p>This editor also contains an optional <code>TextArea</code> element to show the raw html.  This updates as you type into the editable div (it also works in reverse).</p>
+
+<p>I've used the following CSS on my screenshot.  You will need to specify your own widths and heights as appropriate for your scenario:</p>
+
+<pre><code>.texteditor {
+  width: 450px;
+  height: 400px;
+  margin: 3px;
+  padding: 3px; 
+}
+
+.rawtextarea {
+  width: 430px;
+  height: 100px;
+  margin: 3px;
+  padding: 3px;
+}
+
+.toolbar { }
+
+.editbox {
+  width: 430px;
+  height: 200px;
+  padding: 3px;
+  margin: 3px;
+  border: 2px solid black;  
+}
+</code></pre>
+
+<h2>Next Steps...</h2>
+
+<p>Well, the obvious next step is to turn it into a <a href="http://www.dartlang.org/articles/dart-web-components/"><strong>Web UI</strong></a> component.  </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Simple text editor maintained by <a href="https://github.com/chrisbu">chrisbu</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
